@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'blog',#原始'blog.apps.BlogConfig','users.apps.UsersConfig',
-    'users',
+    'blog.apps.BlogConfig',#'blog.apps.BlogConfig','users.apps.UsersConfig',才能加载signal
+    'users.apps.UsersConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
